@@ -20,11 +20,11 @@
         <table id="multiplicationTable" class="w-full text-left mt-4 hidden">
             <thead>
                 <tr>
-                    <th class="py-2 px-4 bg-gray-200">X</th>
-                    <th class="py-2 px-4 bg-gray-200">Result</th>
+                    <th class="py-2 px-4 bg-gray-200 text-center">X</th>
+                    <th class="py-2 px-4 bg-gray-200 text-center"">Result</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-center">
                 
             </tbody>
         </table>
@@ -42,7 +42,7 @@
             for (let i = 1; i <= 10; i++) {
                 const row = document.createElement('tr');
                 const xCell = document.createElement('td');
-                xCell.textContent = `${numberInput} × ${i}`;
+                xCell.textContent = `${numberInput} × ${i} =`;
                 row.appendChild(xCell);
 
                 const resultCell = document.createElement('td');
